@@ -10,14 +10,20 @@
         a { color: #0073e6; text-decoration: none; font-weight: bold; }
         .container { background: white; padding: 30px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); display: inline-block; }
         .contact p { margin: 5px 0; }
-        img { width: 150px; border-radius: 50%; margin-bottom: 20px; }
+        img { 
+            width: 225px;  /* Increased width by 50% */
+            height: 225px; /* Keeps aspect ratio */
+            object-fit: cover; /* Zooms and fills the circular frame */
+            border-radius: 50%; /* Keeps the image circular */
+            margin-bottom: 20px; /* Space below the image */
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <img src="profile.jpg" alt="Maksim Tishin">
         <h1>Hi, I'm Maksim.</h1>
-        <h2>A Cybersecurity enthusiast and Student at Western Governors University.</h2>
+        <h2>Cybersecurity Enthusiast and Student at Western Governors University</h2>
         
         <h2>Projects</h2>
         <p>Coming soon...</p> <!-- Add project links here later -->
